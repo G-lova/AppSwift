@@ -62,6 +62,7 @@ int main(int argc, const char * argv[]) {
             i++;
         }
         
+        int j = 0;
         do {
             NSLog(@"%c", [inputString characterAtIndex:j]);
             j++;
