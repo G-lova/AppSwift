@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "Phone.h"
 #import "Person.h"
+#import "Teacher.h"
+#import "Student.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -30,6 +32,12 @@ int main(int argc, const char * argv[]) {
         phone15.person = dima;
         
         NSLog(@"Finish");
+        
+        
+        Teacher *teacher = [Teacher new];
+        Student *student = [Student new];
+        teacher.delegate = student;
+        [teacher prepareHomework];
         
     }
     return 0;

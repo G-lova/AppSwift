@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CE35B41A2B5A729000E73CDC /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35B4192B5A729000E73CDC /* Phone.m */; };
 		CE35B41E2B5A72C000E73CDC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35B41D2B5A72C000E73CDC /* Person.m */; };
+		CE35B4442B5AC90F00E73CDC /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35B4432B5AC90F00E73CDC /* Teacher.m */; };
+		CE35B4482B5ACA2E00E73CDC /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35B4472B5ACA2E00E73CDC /* Student.m */; };
 		CE5347292B597A9E00A4A179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5347282B597A9E00A4A179 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,11 @@
 		CE35B4192B5A729000E73CDC /* Phone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phone.m; sourceTree = "<group>"; };
 		CE35B41C2B5A72C000E73CDC /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		CE35B41D2B5A72C000E73CDC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CE35B4412B5AC8BB00E73CDC /* TeacherDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherDelegate.h; sourceTree = "<group>"; };
+		CE35B4422B5AC90F00E73CDC /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		CE35B4432B5AC90F00E73CDC /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		CE35B4462B5ACA2E00E73CDC /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		CE35B4472B5ACA2E00E73CDC /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		CE5347252B597A9E00A4A179 /* Lesson3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesson3; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5347282B597A9E00A4A179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +51,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE35B43E2B5AC3E300E73CDC /* PhonePerson */ = {
+			isa = PBXGroup;
+			children = (
+				CE35B4182B5A729000E73CDC /* Phone.h */,
+				CE35B4192B5A729000E73CDC /* Phone.m */,
+				CE35B41C2B5A72C000E73CDC /* Person.h */,
+				CE35B41D2B5A72C000E73CDC /* Person.m */,
+			);
+			path = PhonePerson;
+			sourceTree = "<group>";
+		};
+		CE35B4402B5AC86B00E73CDC /* TeacherStudent */ = {
+			isa = PBXGroup;
+			children = (
+				CE35B4412B5AC8BB00E73CDC /* TeacherDelegate.h */,
+				CE35B4422B5AC90F00E73CDC /* Teacher.h */,
+				CE35B4432B5AC90F00E73CDC /* Teacher.m */,
+				CE35B4462B5ACA2E00E73CDC /* Student.h */,
+				CE35B4472B5ACA2E00E73CDC /* Student.m */,
+			);
+			path = TeacherStudent;
+			sourceTree = "<group>";
+		};
 		CE53471C2B597A9E00A4A179 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				CE5347282B597A9E00A4A179 /* main.m */,
-				CE35B4182B5A729000E73CDC /* Phone.h */,
-				CE35B4192B5A729000E73CDC /* Phone.m */,
-				CE35B41C2B5A72C000E73CDC /* Person.h */,
-				CE35B41D2B5A72C000E73CDC /* Person.m */,
+				CE35B4402B5AC86B00E73CDC /* TeacherStudent */,
+				CE35B43E2B5AC3E300E73CDC /* PhonePerson */,
 			);
 			path = Lesson3;
 			sourceTree = "<group>";
@@ -128,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE35B4442B5AC90F00E73CDC /* Teacher.m in Sources */,
 				CE35B41E2B5A72C000E73CDC /* Person.m in Sources */,
+				CE35B4482B5ACA2E00E73CDC /* Student.m in Sources */,
 				CE35B41A2B5A729000E73CDC /* Phone.m in Sources */,
 				CE5347292B597A9E00A4A179 /* main.m in Sources */,
 			);
